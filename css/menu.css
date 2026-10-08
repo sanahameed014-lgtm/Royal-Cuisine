@@ -1,0 +1,49 @@
+/*  MENU SECTION */
+.menu-page {
+    background: var(--cream);
+}
+
+.menu-filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 12px 30px;
+    background: var(--white);
+    border: 2px solid transparent;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--maroon);
+    color: var(--white);
+    border-color: var(--maroon);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-3px);
+}
+
+.filter-btn.active {
+    background: var(--gold);
+    color: var(--maroon);
+    border-color: var(--gold);
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+

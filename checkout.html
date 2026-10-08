@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Royal Cuisine - Premium Dining Experience</title>
+    <meta name="description" content="Royal Cuisine offers a premium dining experience with delicious food, quality ingredients, and exceptional service.">
+<meta name="keywords" content="Royal Cuisine, restaurant, premium dining, delicious food, quality food, restaurant in Pakistan">
+<meta name="author" content="Royal Cuisine">
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/buttons.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+    <link rel="stylesheet" href="css/chefs.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/forms.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/notification.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/testimonials.css" />
+    <link rel="stylesheet" href="css/reservation.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Fixed Logo -->
+    <div class="fixed-logo" id="fixed-logo">
+      <img src="images/royal-logo.png" alt="Royal Cuisine Logo" />
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scroll-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle" id="dark-mode-toggle">
+      <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <img src="images/royal-logo.png" alt="Royal Cuisine" />
+          <span>Royal Cuisine</span>
+        </a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li class="dropdown">
+            <a href="#" class="nav-link dropdown-toggle">
+              Menu <i class="fas fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="menu.html#main" data-menu="main">Main Course</a></li>
+              <li><a href="menu.html#fast" data-menu="fast">Fast Food</a></li>
+              <li>
+                <a href="menu.html#dessert" data-menu="dessert">Desserts</a>
+              </li>
+              <li><a href="menu.html#drinks" data-menu="drink">Drinks</a></li>
+            </ul>
+          </li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="chefs.html" class="nav-link">Chefs</a></li>
+          <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+          <li><a href="reservation.html" class="nav-link">Reservation</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="sitemap.html" class="nav-link">Sitemap</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="cart-btn" id="cart-btn">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count" id="cart-count">0</span>
+          </button>
+          <button class="mobile-toggle" id="mobile-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="checkout-container">
+      <h2>Checkout Form</h2>
+      <form id="checkoutForm">
+        <input type="text" id="name" placeholder="Full Name" required />
+        <input type="tel" id="phone" placeholder="03XX-XXXXXXX" required />
+        <textarea
+          id="address"
+          placeholder="Enter Your Address"
+          required
+        ></textarea>
+
+        <button type="submit">Place Order</button>
+      </form>
+    </div>
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-brand">
+              <a href="index.html" class="footer-logo">
+                <img src="images/royal-logo.png" alt="Royal Cuisine" />
+                <span>Royal Cuisine</span>
+              </a>
+              <p>
+                Experience the finest flavors crafted with passion. Where every
+                dish tells a story of excellence.
+              </p>
+              <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+            <div class="footer-links">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Our Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+              </ul>
+            </div>
+            <div class="footer-hours">
+              <h3>Opening Hours</h3>
+              <ul>
+                <li>
+                  <span>Monday - Friday</span><span>11:00 AM - 11:00 PM</span>
+                </li>
+                <li><span>Saturday</span><span>10:00 AM - 12:00 AM</span></li>
+                <li><span>Sunday</span><span>10:00 AM - 12:00 AM</span></li>
+              </ul>
+            </div>
+            <div class="footer-newsletter">
+              <h3>Newsletter</h3>
+              <p>Subscribe to get special offers and updates.</p>
+              <form class="newsletter-form" id="newsletter-form">
+                <input type="email" placeholder="Your email address" required/>
+                <button type="submit">
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>
+            &copy; 2026 Royal Cuisine. All Rights Reserved. Designed by Sana
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/helper.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/checkout.js"></script>
+    <script src="js/validation.js"></script>
+    
+  </body>
+</html>

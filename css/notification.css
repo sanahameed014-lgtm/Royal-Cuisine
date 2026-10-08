@@ -1,0 +1,28 @@
+/* NOTIFICATION */
+.notification {
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-20px);
+    padding: 15px 30px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    z-index: 10000;
+    opacity: 0;
+    transition: all 0.4s ease;
+    border: 2px solid var(--gold);
+}
+
+.notification-success {
+    background: var(--maroon);
+    color: #fff;
+}
+
+.notification i {
+    font-size: 1.2rem;
+}

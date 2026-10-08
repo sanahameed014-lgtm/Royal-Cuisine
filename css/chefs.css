@@ -1,0 +1,120 @@
+/*  CHEFS SECTION */
+.chefs {
+    background: var(--cream);
+}
+
+.chefs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.chef-card {
+    background: var(--white);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    text-align: center;
+}
+
+.chef-card:hover {
+    transform: translateY(-15px);
+    box-shadow: var(--shadow-lg);
+}
+
+.chef-img {
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+}
+
+.chef-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-slow);
+}
+
+.chef-card:hover .chef-img img {
+    transform: scale(1.1);
+}
+
+.chef-social {
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    background: rgba(107, 30, 30, 0.9);
+    transition: var(--transition);
+}
+
+.chef-card:hover .chef-social {
+    bottom: 0;
+}
+
+.chef-social a {
+    width: 40px;
+    height: 40px;
+    background: var(--white);
+    color: var(--maroon);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.chef-social a:hover {
+    background: var(--gold);
+    transform: translateY(-5px);
+}
+
+.chef-info {
+    padding: 30px 25px;
+}
+
+.chef-info h3 {
+    font-size: 1.4rem;
+    color: var(--maroon);
+    margin-bottom: 8px;
+}
+
+[data-theme="dark"] .chef-info h3 {
+    color: var(--gold);
+}
+
+.chef-role {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--maroon);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.chef-exp {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.chef-exp i {
+    color: var(--gold);
+    margin-right: 5px;
+}
+
+.chef-specialty {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    font-style: italic;
+}

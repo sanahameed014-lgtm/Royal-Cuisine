@@ -1,0 +1,89 @@
+/*  SECTION COMMON STYLES */
+section {
+    padding: 100px 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-subtitle {
+    display: inline-block;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.section-subtitle::before,
+.section-subtitle::after {
+    content: '~';
+    margin: 0 10px;
+    color: var(--light-maroon);
+}
+
+.section-title {
+    font-size: 3rem;
+    color: var(--maroon);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+[data-theme="dark"] .section-title {
+    color: var(--gold);
+}
+
+.section-line {
+    width: 80px;
+    height: 3px;
+    background: var(--gold);
+    margin: 0 auto;
+    position: relative;
+}
+
+.section-line::before,
+.section-line::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background: var(--gold);
+    border-radius: 50%;
+}
+
+.section-line::before {
+    left: -15px;
+}
+
+.section-line::after {
+    right: -15px;
+}
+/* SCROLLBAR STYLING */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--off-white);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--maroon);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--light-maroon);
+}
+
+/* SELECTION STYLING */
+::selection {
+    background: var(--gold);
+    color: var(--maroon);
+}

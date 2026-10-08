@@ -1,0 +1,746 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Cuisine Restaurant in Clifton Karachi | Fine Dining & Menu</title>
+    <meta name="description" content="Royal Cuisine offers a premium dining experience with delicious food, quality ingredients, and exceptional service.">
+<meta name="keywords" content="Royal Cuisine, restaurant, premium dining, delicious food, quality food, restaurant in Pakistan">
+<meta name="author" content="Royal Cuisine">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/chefs.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/notification.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/testimonials.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reservation.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+      <div class="loader">
+        <div class="loader-circle"></div>
+        <div class="loader-text">Royal Cuisine</div>
+      </div>
+    </div>
+
+    <!-- Fixed Logo -->
+    <div class="fixed-logo" id="fixed-logo">
+      <img src="images/royal-logo.png" alt="Royal Cuisine Logo"/>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scroll-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle" id="dark-mode-toggle">
+      <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <img src="images/royal-logo.png" alt="Royal Cuisine"/>
+          <span>Royal Cuisine</span>
+        </a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li class="dropdown">
+            <a href="#" class="nav-link dropdown-toggle">
+              Menu <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="menu.html#main" data-menu="main">Main Course</a></li>
+              <li><a href="menu.html#fast" data-menu="fast">Fast Food</a></li>
+              <li>
+                <a href="menu.html#dessert" data-menu="dessert">Desserts</a>
+              </li>
+              <li><a href="menu.html#drinks" data-menu="drink">Drinks</a></li>
+            </ul>
+          </li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="chefs.html" class="nav-link">Chefs</a></li>
+          <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+          <li><a href="reservation.html" class="nav-link">Reservation</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="sitemap.html" class="nav-link">Sitemap</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="cart-btn" id="cart-btn">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count" id="cart-count">0</span>
+          </button>
+          <button class="mobile-toggle" id="mobile-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="cart-close" id="cart-close">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="cart-items" id="cart-items">
+        <div class="cart-empty">
+          <i class="fas fa-shopping-basket"></i>
+          <p>Your cart is empty</p>
+        </div>
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span id="cart-total-price">Rs0.00</span>
+        </div>
+        <button id="checkout-btn" class="btn btn-primary btn-full">
+          Checkout
+        </button>
+      </div>
+    </div>
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-bg">
+        <img src="images/restaurant.jpg" alt="Restaurant Interior" />
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-logo">
+          <img src="images/royal-logo.png" alt="Royal Cuisine Logo"/>
+        </div>
+        <div class="hero-subtitle">Welcome to</div>
+        <h1 class="hero-title">Royal Cuisine</h1>
+        <p class="hero-description">
+          Experience the finest flavors crafted with passion. Where every dish
+          tells a story of excellence and every meal becomes a cherished memory.
+        </p>
+        <div class="hero-buttons">
+          <a href="menu.html" class="btn btn-primary">Order Now</a>
+          <a href="reservation.html" class="btn btn-primary">Book Table</a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <span>Scroll Down</span>
+      </div>
+    </section>
+
+    <!-- About Preview Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Our Story</span>
+          <h2 class="section-title">About Us</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="about-grid">
+          <div class="about-images">
+            <div class="about-img about-img-1">
+              <img src="images/about1.jpg" alt="Restaurant Interior" />
+            </div>
+            <div class="about-img about-img-2">
+              <img src="images/about2.webp" alt="Fine Dining" />
+            </div>
+            <div class="experience-badge">
+              <span class="exp-number">15+</span>
+              <span class="exp-text">Years of<br />Excellence</span>
+            </div>
+          </div>
+          <div class="about-content">
+            <h3>A Legacy of Culinary Excellence</h3>
+            <p>
+              Since 2011, Royal Cuisine has been serving exceptional dishes that
+              blend traditional recipes with modern culinary techniques. Our
+              commitment to quality ingredients and impeccable service has made
+              us a beloved destination for food enthusiasts.
+            </p>
+            <p>
+              Every dish is crafted with passion by our expert chefs using the
+              freshest locally-sourced ingredients. We believe that dining is
+              not just about food—it's about creating unforgettable experiences.
+            </p>
+            <div class="about-features">
+              <div class="feature">
+                <i class="fas fa-utensils"></i>
+                <span>Master Chefs</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-leaf"></i>
+                <span>Fresh Ingredients</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-award"></i>
+                <span>Award Winning</span>
+              </div>
+            </div>
+            <a href="about.html" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-icon"><i class="fas fa-users"></i></div>
+            <div class="stat-number" data-target="50000">0</div>
+            <div class="stat-label">Happy Customers</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon"><i class="fas fa-utensils"></i></div>
+            <div class="stat-number" data-target="120">0</div>
+            <div class="stat-label">Menu Items</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon"><i class="fas fa-user-tie"></i></div>
+            <div class="stat-number" data-target="25">0</div>
+            <div class="stat-label">Expert Chefs</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+            <div class="stat-number" data-target="15">0</div>
+            <div class="stat-label">Awards Won</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Special Dishes Preview -->
+    <section class="menu-preview" id="menu">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Delicious Menu</span>
+          <h2 class="section-title">Our Special Dishes</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="menu-grid" id="menu-grid">
+          <!-- Menu items rendered by JS -->
+        </div>
+        <div class="text-center" style="margin-top: 50px">
+          <a href="menu.html" class="btn btn-primary">View Full Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Visual Feast</span>
+          <h2 class="section-title">Our Gallery</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- 1 -->
+          <div class="gallery-item">
+            <img src="images/gallery1.jpg" alt="Variety of Dishes" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="gallery-item">
+            <img src="images/gallery2.jpg" alt="Salad" /><span class="new-badge"
+              >new</span
+            >
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="gallery-item">
+            <img src="images/gallery3.jpg" alt="Italian Pizza" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="gallery-item">
+            <img src="images/gallery4.jpg" alt="stack of Pancakes" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+
+          <!-- 5 -->
+          <div class="gallery-item">
+            <img src="images/gallery5.jpg" alt="Donuts" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+
+          <!-- 6 -->
+          <div class="gallery-item">
+            <img
+              src="images/gallery6.jpg"
+              alt="Slices of crusty artisan bread"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+
+          <!-- 7 -->
+          <div class="gallery-item">
+            <img src="images/gallery7.jpg" alt="French toast" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+
+          <!-- 8 -->
+          <div class="gallery-item">
+            <img src="images/gallery8.jpg" alt=" Toast with egg" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+
+          <!-- 9 -->
+          <div class="gallery-item">
+            <img src="images/margherita pizza.jpg" alt="Pizza" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+
+          <!-- 10 -->
+          <div class="gallery-item">
+            <img src="images/images10.jpg" alt="Couscous" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+
+          <!-- 11 -->
+          <div class="gallery-item">
+            <img src="images/images11.jpg" alt="BBQ Platter" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+
+          <!-- 12 -->
+          <div class="gallery-item">
+            <img src="images/images12.jpg" alt=" Shahi Handi" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+
+          <!-- 13 -->
+          <div class="gallery-item">
+            <img src="images/soups.jpg" alt="soup"/>
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+
+          <!-- 14 -->
+          <div class="gallery-item">
+            <img src="images/signature icecream delight.jpg" alt="Ice Cream" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+
+          <!-- 15 -->
+          <div class="gallery-item">
+            <img src="images/images15.jpg" alt="Cocktail" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+
+          <!-- 16 -->
+          <div class="gallery-item">
+            <img src="images/images16.jpg" alt="Coffee" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+
+          <!-- 17 -->
+          <div class="gallery-item">
+            <img src="images/images17.jpg" alt="Cakes" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+
+          <!-- 18 -->
+          <div class="gallery-item">
+            <img src="images/images18.jpg" alt="Sweets" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination -->
+
+        <div class="gallery-pagination">
+          <button id="prevPage" class="page-btn">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+
+          <button class="page-btn active" data-page="1">1</button>
+          <button class="page-btn" data-page="2">2</button>
+          <button class="page-btn" data-page="3">3</button>
+
+          <button id="nextPage" class="page-btn">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chefs Preview -->
+    <section class="chefs" id="chefs">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Expert Team</span>
+          <h2 class="section-title">Meet Our Chefs</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="chefs-grid">
+          <div class="chef-card">
+            <div class="chef-img">
+              <img src="images/marco.jpg" alt="Chef Marco" />
+              <div class="chef-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+            <div class="chef-info">
+              <h3>Chef Marco Rossi</h3>
+              <span class="chef-role">Head Chef</span>
+              <p class="chef-exp">
+                <i class="fas fa-star"></i> 20 Years Experience
+              </p>
+              <p class="chef-specialty">
+                Speciality: Italian & Continental Cuisine
+              </p>
+            </div>
+          </div>
+          <div class="chef-card">
+            <div class="chef-img">
+              <img src="images/chef sarah.jpg" alt="Chef Sarah" />
+              <div class="chef-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+            <div class="chef-info">
+              <h3>Chef Sarah Chen</h3>
+              <span class="chef-role">Pastry Chef</span>
+              <p class="chef-exp">
+                <i class="fas fa-star"></i> 15 Years Experience
+              </p>
+              <p class="chef-specialty">Speciality: Desserts & Bakery</p>
+            </div>
+          </div>
+          <div class="chef-card">
+            <div class="chef-img">
+              <img src="images/chef ahmed.jpg" alt="Chef Ahmed" />
+              <div class="chef-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+            <div class="chef-info">
+              <h3>Chef Ahmed Hassan</h3>
+              <span class="chef-role">Sous Chef</span>
+              <p class="chef-exp">
+                <i class="fas fa-star"></i> 12 Years Experience
+              </p>
+              <p class="chef-specialty">Speciality: Middle Eastern & BBQ</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center" style="margin-top: 50px">
+          <a href="chefs.html" class="btn btn-primary">Meet All Chefs</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Preview -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Customer Reviews</span>
+          <h2 class="section-title">What Our Guests Say</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="testimonials-slider" id="testimonials-slider">
+          <div class="testimonials-track" id="testimonials-track">
+            <div class="testimonial-card">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                "Absolutely the best dining experience I've ever had. The
+                Chicken Biryani was out of this world, and the ambiance is
+                simply magical."
+              </p>
+              <div class="testimonial-author">
+                <img src="images/testimonial1.jpg" alt="Sarah Johnson" />
+                <div>
+                  <h4>Sarah Johnson</h4>
+                  <span>Food Blogger</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                "The attention to detail in every dish is remarkable. The
+                Chocolate Lava Cake is a dessert lover's dream come true!"
+              </p>
+              <div class="testimonial-author">
+                <img src="images/tesimonial2.jpg" alt="Michael Brown" />
+                <div>
+                  <h4>Michael Brown</h4>
+                  <span>Restaurant Critic</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star-half-alt"></i>
+              </div>
+              <p class="testimonial-text">
+                "Celebrated our anniversary here and it was unforgettable. The
+                staff made us feel so special, and the Beef Steak was cooked to
+                perfection."
+              </p>
+              <div class="testimonial-author">
+                <img src="images/testimonial3.webp" alt="Emily Davis" />
+                <div>
+                  <h4>Emily Davis</h4>
+                  <span>Regular Customer</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                "As a chef myself, I have high standards. Royal Cuisine exceeded
+                all my expectations. The fusion of flavors is truly innovative."
+              </p>
+              <div class="testimonial-author">
+                <img src="images/testimonial4.jpg" alt="David Wilson" />
+                <div>
+                  <h4>David Wilson</h4>
+                  <span>Professional Chef</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                "The BBQ Platter is legendary! Perfectly smoked meats with
+                amazing sides. The service is impeccable and the atmosphere is
+                warm."
+              </p>
+              <div class="testimonial-author">
+                <img src="images/testimonials5.jpg" alt="James Miller" />
+                <div>
+                  <h4>James Miller</h4>
+                  <span>Business Owner</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-dots" id="testimonial-dots"></div>
+        </div>
+        <div class="text-center" style="margin-top: 50px">
+          <a href="testimonials.html" class="btn btn-primary"
+            >Read All Reviews</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Reservation CTA -->
+    <section class="reservation-cta" id="reservation">
+      <div class="container">
+        <div class="reservation-wrapper">
+          <div class="reservation-info">
+            <span class="section-subtitle">Book a Table</span>
+            <h2 class="section-title">Make a Reservation</h2>
+            <div class="section-line"></div>
+            <p>
+              Reserve your table today and experience the finest dining. Whether
+              it's a romantic dinner, family gathering, or business meeting,
+              we'll make it special.
+            </p>
+            <div class="reservation-contact">
+              <div class="res-contact-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <span>Call Us</span><strong>+92 (21) 111-111-127</strong>
+                </div>
+              </div>
+              <div class="res-contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <span>Email Us</span
+                  ><strong>reservations@royalcuisine.com</strong>
+                </div>
+              </div>
+            </div>
+            <a href="reservation.html" class="btn btn-primary">Book Now</a>
+          </div>
+          <div class="reservation-form-wrapper">
+            <div class="reservation-logo">
+              <img src="images/royal-logo.png" alt="Royal Cuisine" />
+            </div>
+            <p class="reservation-tagline">Exquisite Food - Royal Experience</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-brand">
+              <a href="index.html" class="footer-logo">
+                <img src="images/royal-logo.png" alt="Royal Cuisine" />
+                <span>Royal Cuisine</span>
+              </a>
+              <p>
+                Experience the finest flavors crafted with passion. Where every
+                dish tells a story of excellence.
+              </p>
+              <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+            <div class="footer-links">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Our Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+              </ul>
+            </div>
+            <div class="footer-hours">
+              <h3>Opening Hours</h3>
+              <ul>
+                <li>
+                  <span>Monday - Friday</span><span>11:00 AM - 11:00 PM</span>
+                </li>
+                <li><span>Saturday</span><span>10:00 AM - 12:00 AM</span></li>
+                <li><span>Sunday</span><span>10:00 AM - 12:00 AM</span></li>
+              </ul>
+            </div>
+            <div class="footer-newsletter">
+              <h3>Newsletter</h3>
+              <p>Subscribe to get special offers and updates.</p>
+              <form class="newsletter-form" id="newsletter-form">
+                <input type="email" placeholder="Your email address" required />
+                <button type="submit">
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>
+            &copy; 2026 Royal Cuisine. All Rights Reserved. Designed by Sana.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/helper.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/checkout.js"></script>
+    <script src="js/validation.js"></script>
+  
+  </body>
+</html>
